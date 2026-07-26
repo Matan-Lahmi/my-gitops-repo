@@ -1,1 +1,12 @@
+name: test-ci
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job-a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This repo have bin commit by ci"
